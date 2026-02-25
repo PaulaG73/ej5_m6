@@ -5,6 +5,9 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router';
+const route = useRouter
+
 
 </script>
 
