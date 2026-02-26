@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import CatalogoView from '../views/CatalogoView.vue'
 import ProductView from '../views/ProductView.vue'
+import InformaciónView from '../views/InformaciónView.vue'
 
 const routes = [
   {
@@ -14,6 +15,7 @@ const routes = [
   {
     path: '/about',
     name: 'about',
+    alias: ['/acerca', '/sobre', '/nosotros'],
     component: AboutView
  },
 
@@ -22,6 +24,12 @@ const routes = [
     name: 'catalogo',
     component: CatalogoView
  },
+ {
+    path: '/informacion',
+    name: 'informacion',
+    redirect: '/',
+    component: InformaciónView
+  },
 
   {
     path: '/product/:id',
