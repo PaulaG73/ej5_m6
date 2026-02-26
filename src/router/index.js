@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
-import ProductsView from '@/views/ProductsView.vue'
-import ProductView from '@/views/ProductView.vue'
+import CatalogoView from '../views/CatalogoView.vue'
+import ProductView from '../views/ProductView.vue'
 
 const routes = [
   {
@@ -18,14 +18,15 @@ const routes = [
  },
 
  {
-    path: '/products',
-    name: 'products',
-    component: ProductsView
+    path: '/catalogo',
+    name: 'catalogo',
+    component: CatalogoView
  },
 
   {
     path: '/product/:id',
     name: 'product',
+    props: true,
     component: ProductView
  }
 
