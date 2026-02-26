@@ -1,7 +1,8 @@
 <template>
   <div class="about">
     <h1>Qué ofrece Vinóloga?</h1>
-    <p>Vinóloga nace para crear un puente entre la gente y el vino en todas sus
+    <br>
+    <p class="about__text">Vinóloga nace para crear un puente entre la gente y el vino en todas sus
       expresiones… de una forma lúdica y siempre priorizando la calidad. Ofrece turismo enológico y gastronómico y también eventos a la medida… desde
       catas personalizadas en tu propia casa, o empresa, hasta producciones de alto glamour. Vinóloga pone a tu
       disposición vinos, espumantes y destilados de autor, de pequeñas producciones… “esos que se hacen a escala
@@ -14,5 +15,10 @@
 </script>
 
 <style>
+.about__text{
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: justify;
 
+}
 </style>

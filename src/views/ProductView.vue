@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h1>{{ product.name }}</h1>
+        <h1 class="product__name">{{ product.name }}</h1>
 
-        <router-link to="/catalogo">Volver</router-link>
+        <router-link to="/catalogo" class="btn btn-dark">Volver</router-link>
     </div>
 </template>
 
@@ -23,4 +23,10 @@ const product = computed(() => catalogo.find((item) => item.id == props.id))
 </script>
 
 
-<style scoped></style>
+<style scoped>
+.product__name{
+
+    color: #54030f;
+    font-style: italic;
+}
+</style>
